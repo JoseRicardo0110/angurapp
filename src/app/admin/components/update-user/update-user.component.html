@@ -1,0 +1,35 @@
+<div class="container py-4">
+    <h2>Editar Usuario</h2>
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+        <label for="IdArea" class="form-label">Área</label>
+        <input type="text" id="IdArea" formControlName="IdArea" class="form-control" />
+      </div>
+      <div class="mb-3">
+        <label for="usuario" class="form-label">Usuario</label>
+        <input type="text" id="usuario" formControlName="usuario" class="form-control" />
+      </div>
+      <div class="mb-3">
+        <label for="contrasena" class="form-label">Contraseña</label>
+        <input type="password" id="contrasena" formControlName="contrasena" class="form-control" />
+      </div>
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" id="nombre" formControlName="nombre" class="form-control" />
+      </div>
+      <div class="mb-3">
+        <label for="apellido" class="form-label">Apellido</label>
+        <input type="text" id="apellido" formControlName="apellido" class="form-control" />
+      </div>
+      <div class="mb-3">
+        <label for="documento" class="form-label">Documento</label>
+        <input type="text" id="documento" formControlName="documento" class="form-control" />
+      </div>
+      <div class="mb-3">
+        <label for="telefono" class="form-label">Teléfono</label>
+        <input type="text" id="telefono" formControlName="telefono" class="form-control" />
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="userForm.invalid">Guardar Cambios</button>
+    </form>
+  </div>
+  

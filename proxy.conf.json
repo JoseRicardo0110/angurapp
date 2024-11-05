@@ -1,0 +1,8 @@
+{
+    "/get_users": {
+      "target": "https://soli-iub-fastapi.onrender.com",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug"
+    }
+  }
